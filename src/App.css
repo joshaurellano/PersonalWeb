@@ -1,0 +1,67 @@
+.heading {
+  color: white; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  font-size: 3rem; 
+  font-weight: bold; 
+}
+
+.subheading {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: white;
+  font-family: Georgia;
+}
+.nav-link-hover {
+  transition: transform 0.3s ease, 
+  font-size 0.3s ease;
+}
+.nav-link-hover:hover {
+  transform: scale(1.2);  
+  font-size: 1rem;
+  color: white;       
+}
+.navlink-hover {
+  transition: transform 0.3s ease, 
+  font-size 0.3s ease;
+}
+.navlink-hover:hover {
+  transform: scale(1.2);  
+  font-size: 2rem;
+  color: white;       
+}
+
+.accordion-item {
+  background-color: transparent !important; /* Make the accordion item transparent */
+  border: none !important; /* Remove borders */
+  box-shadow: none !important; /* Remove box shadow if present */
+}
+
+.accordion-header {
+  background-color: transparent !important; /* Optional: semi-transparent header */
+  color: white !important; /* Ensure text is readable */
+  font-weight: bold;
+}
+
+.accordion-body {
+  background-color: transparent !important;
+  color: white !important; 
+}
+
+.carousel-image {
+  width: 100vw; 
+  height: 100vh; 
+  object-fit: cover; 
+  object-position: center; 
+}
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
