@@ -27,9 +27,10 @@ function Photos() {
             display:"flex",
             flexDirection:"column",
             paddingTop: "60px",
-            position:"relative"}}>
+            position:"relative",
+            backgroundColor:"#F5F5DC"}}>
           <div>
-          <Navbar data-bs-theme="dark" fixed="top" style={{backgroundColor:"#001F3F"}}>
+          <Navbar data-bs-theme="dark" fixed="top" collapseOnSelect expand="lg" style={{backgroundColor:"#001F3F"}}>
           <Container>
           <div>
           <span className="navbar-toggler-icon" 
@@ -38,6 +39,8 @@ function Photos() {
           </div>
           <FcBusinessman style={{height:"30px", width:"30px", marginRight:"5px",marginLeft:"5px"}} />
             <Navbar.Brand as={Link} to="/" style={{fontWeight:"bold",fontFamily:"Georgia,seriff", marginLeft:"5px"}}>My Personal Website</Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto" variant="pills">
               <Nav.Link as={Link} to="/home">Home</Nav.Link>
               <Nav.Link as={Link} to="/About">About</Nav.Link>
@@ -45,7 +48,27 @@ function Photos() {
               <Nav.Link as={Link} to="/hobbies" className="nav-link-hover">Hobbies</Nav.Link>
               <Nav.Link eventKey="disabled" style={{color:"gray"}}>Photos</Nav.Link>
             </Nav>
-        
+            <Nav className="ms-auto d-flex align-items-center">
+            <Navbar.Text>Visit my Social Media Channels</Navbar.Text>
+            <div>
+            <a href="https://www.facebook.com/aurellanojoshuaanthony/"
+              target="_blank"
+              rel="noopener noreferrer">
+            <FaFacebook style={{color:"white", margin: "0 0.5rem", fontSize:"30px"}} />
+            </a>
+            <a href="https://x.com/joshaurellano"
+              target="_blank"
+              rel="noopener noreferrer">
+            <FaSquareXTwitter style={{color:"white", margin: "0 0.5rem", fontSize:"30px"}} />
+            </a>
+            <a href="https://github.com/joshaurellano"
+              target="_blank"
+              rel="noopener noreferrer">
+            <FaGithub style={{color:"white", margin: "0 0.5rem", fontSize:"30px"}} />
+            </a>
+            </div>
+            </Nav>
+            </Navbar.Collapse>
         <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header style={{backgroundColor:"#001F3F" ,color:"white"}} closeButton>
           <Offcanvas.Title>Main Menu</Offcanvas.Title>
