@@ -42,7 +42,7 @@ function Hobbies() {
             <Nav className="me-auto" variant="pills">
               <Nav.Link as={Link} to="/home">Home</Nav.Link>
               <Nav.Link as={Link} to="/About">About</Nav.Link>
-              <Nav.Link as={Link} to="/hobbies" className="nav-link-hover">Education</Nav.Link>
+              <Nav.Link as={Link} to="/education" className="nav-link-hover">Education</Nav.Link>
               <Nav.Link eventKey="disabled" style={{color:"gray"}}>Hobbies</Nav.Link>
               <Nav.Link as={Link} to="/photos" className="nav-link-hover">Photos</Nav.Link>
             </Nav>

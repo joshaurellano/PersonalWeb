@@ -26,7 +26,8 @@ function About() {
             display:"flex",
             flexDirection:"column",
             paddingTop: "60px",
-            position:"relative"
+            position:"relative",
+            backgroundColor:"#F4F4F4"
           }}>
           <div>
           <Navbar data-bs-theme="dark" fixed="top" style={{backgroundColor:"#001F3F"}}>
@@ -73,8 +74,8 @@ function About() {
           <Card.Body style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
     
           <div>
-            <h1 style={{fontSize:"2rem",
-            }}>Overview</h1>
+            <h1 style={{ fontSize: "2rem"}}
+            >Overview</h1>
             <p>This page contains some information about myself. Feel free to check this out!</p><br />
             <Button variant="primary" onClick={mhandleShow}>
         Just some info bout my self
@@ -92,7 +93,7 @@ function About() {
         </Modal.Footer>
       </Modal>
           </div>
-          <div style={{ display: "flex", justifyContent: "flex-end", padding: "1rem" }}>
+          <div style={{ display: "flex", justifyContent: "flex-end"}}>
           <Container>
               <Row>
               <Col xs={6} md={4}>
@@ -103,6 +104,7 @@ function About() {
           </div>
           </Card.Body>
           </Card>
+          <div>
           <Container>
           <Row className="align-items-start">
           <Col lg={6} md={12} style={{ paddingTop: "40px" }}>
@@ -145,6 +147,7 @@ function About() {
           </Col>
           </Row>
           </Container>
+          </div>
         </div>
         
         <div style={{ display: "flex", justifyContent: "flex-end", padding: "1rem" }}>

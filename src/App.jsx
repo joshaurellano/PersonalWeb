@@ -4,7 +4,7 @@ import { FaFacebook,FaGithub  } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import './App.css';
 import {Link} from 'react-router-dom';
-import { Container, Nav, Navbar, Offcanvas, Row, Col, Card, Button} from 'react-bootstrap';
+import { Container, Nav, Navbar, Offcanvas, Row, Col, Card, Button, Toast} from 'react-bootstrap';
 import ima1 from './apppics/aboutme.jpg';
 import ima2 from './apppics/education.jpg';
 import ima3 from './apppics/hobbies.jpg';
@@ -19,6 +19,10 @@ function App() {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const [showA, setShowA] = useState(true);
+  const toggleShowA = () => setShowA(!showA);
+
 
     return (
       <>
@@ -35,6 +39,12 @@ function App() {
             paddingTop: "60px",
             position:"relative"
           }}>
+          <Toast show={showA} onClose={toggleShowA}>
+      <Toast.Header>
+        <strong className="me-auto">Check Them Out. They are awesome!</strong>
+      </Toast.Header>
+      <Toast.Body><a href="https://www.flaticon.com/free-icons/code" title="code icons">Code icons created by juicy_fish - Flaticon</a></Toast.Body>
+    </Toast>
           <Navbar data-bs-theme="dark" fixed="top" style={{backgroundColor:"#001F3F"}}>
           <Container>
           <div>

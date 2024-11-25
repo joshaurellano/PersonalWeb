@@ -41,7 +41,7 @@ function Photos() {
             <Nav className="me-auto" variant="pills">
               <Nav.Link as={Link} to="/home">Home</Nav.Link>
               <Nav.Link as={Link} to="/About">About</Nav.Link>
-              <Nav.Link as={Link} to="/hobbies" className="nav-link-hover">Education</Nav.Link>
+              <Nav.Link as={Link} to="/education" className="nav-link-hover">Education</Nav.Link>
               <Nav.Link as={Link} to="/hobbies" className="nav-link-hover">Hobbies</Nav.Link>
               <Nav.Link eventKey="disabled" style={{color:"gray"}}>Photos</Nav.Link>
             </Nav>
@@ -65,6 +65,16 @@ function Photos() {
         </div>
 
         <div style={{flex:"1", fontFamily:"Georgia,seriff"}}>
+          <div>
+          <Card style={{backgroundColor:"#EAD8B1"}}>
+            <Card.Body >
+            <h1>Photos Section</h1><br />
+            <p>Here is some of my photos and a little bit of story behind it</p>
+            </Card.Body>
+            </Card>
+          </div>
+          
+          
           <Card style ={{backgroundColor:"#EAD8B1",
             height:"400px",
             width:"400px",
