@@ -91,9 +91,9 @@ function Hobbies() {
         <div className="mt-5">
             <div style={{fontFamily:"Georgia, seriff", display: "flex",justifyContent: "center",alignItems: "center"}}>
               <Container>
-              <Row className='mb-4'>
-                  <Col>
-                    <Card style={{ width: '18rem' }}>
+              <Row className='mb-4' style={{ justifyContent: "center" }}>
+                  <Col lg={4} md={6} sm={12} className="mb-4">
+                    <Card style={{ width: '100%' }}>
                     <Card.Img variant="top" src={pic1} style={{height:"200px", width:"100%", objectFit:"cover"}} />
                     <Card.Body>
                       <Card.Title>Coding</Card.Title>
@@ -103,8 +103,8 @@ function Hobbies() {
                     </Card.Body>
                   </Card>
                   </Col>
-                  <Col>
-                    <Card style={{ width: '18rem' }}>
+                  <Col lg={4} md={6} sm={12} className="mb-4">
+                    <Card style={{ width: '100%' }}>
                     <Card.Img variant="top" src={pic4} style={{height:"200px", width:"100%", objectFit:"cover"}} />
                     <Card.Body>
                       <Card.Title>Watching Anime</Card.Title>
@@ -114,8 +114,8 @@ function Hobbies() {
                     </Card.Body>
                   </Card>
                   </Col>
-                  <Col>
-                  <Card style={{ width: '18rem' }}>
+                  <Col lg={4} md={6} sm={12} className="mb-4">
+                  <Card style={{ width: '100%' }}>
                     <Card.Img variant="top" src={pic2} style={{height:"200px", width:"100%", objectFit:"cover"}} />
                     <Card.Body>
                       <Card.Title>Fixing Things</Card.Title>
@@ -126,9 +126,9 @@ function Hobbies() {
                   </Card>
                   </Col>
               </Row>
-              <Row>
-                <Col>
-                <Card style={{ width: '18rem', marginLeft:"12rem"}}>
+              <Row style={{ justifyContent: "center" }}>
+                <Col lg={4} md={6} sm={12} className="mb-4">
+                <Card style={{ width: '100%'}}>
                     <Card.Img variant="top" src={pic3} style={{height:"200px", width:"100%", objectFit:"cover"}} />
                     <Card.Body>
                       <Card.Title>PC Games</Card.Title>
@@ -138,8 +138,8 @@ function Hobbies() {
                     </Card.Body>
                   </Card>
                 </Col>
-                <Col>
-                <Card style={{ width: '18rem' }}>
+                <Col lg={4} md={6} sm={12} className="mb-4">
+                <Card style={{ width: '100%' }}>
                     <Card.Img variant="top" src={pic5} style={{height:"200px", width:"100%", objectFit:"cover"}} />
                     <Card.Body>
                       <Card.Title>Playing Card Games</Card.Title>

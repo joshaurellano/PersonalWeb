@@ -112,11 +112,12 @@ function App() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center"}}>
-            <h1 className="fade-in heading" style={{ color: "white", fontWeight: "bold", fontSize:"5rem"}}>
+                
+            <h1 className="fade-in heading" style={{ color: "white", fontWeight: "bold", fontSize: "clamp(3rem, 5vw, 5rem)"}}>
           My Personal Website </h1>
             </div>
           <br />
-          <div style={{fontFamily:"Georgia,seriff", color:"white", display: "flex", fontSize:"2rem",justifyContent: "center",alignItems: "center"}}>
+          <div style={{fontFamily:"Georgia,seriff", color:"white", display: "flex", fontSize:"clamp(1rem, 2.5vw, 2rem)",justifyContent: "center",alignItems: "center"}}>
           <p className='subheading'>A website dedicated for my personal information</p>
           </div>
           </div>

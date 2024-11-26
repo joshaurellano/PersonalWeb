@@ -172,14 +172,14 @@ function About() {
           </Container>
           </div>
         </div>
-        
-        <div style={{ display: "flex", justifyContent: "flex-end", padding: "1rem" }}>
+       
+        {/* <div style={{ display: "flex", justifyContent: "flex-end", padding: "1rem" }}>
         <Pagination>
         <Pagination.Next as={Link} to="/education"> Education <FaArrowRight />
         </Pagination.Next>
           </Pagination>
         </div>
-        
+       */}
         
           <div>
           <footer style={{

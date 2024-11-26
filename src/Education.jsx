@@ -85,7 +85,7 @@ function Education() {
             </Container>
           </Navbar>          
         </div>
-
+        <div>
         <div style={{flex:"1", fontFamily:"Georgia,seriff"}}>
           <Container fluid>
             <Row>
@@ -156,13 +156,14 @@ function Education() {
               </Col>
             </Row>
           </Container>
-
+          </div>
+         
         </div>
-
           <div>
           <footer style={{
           backgroundColor:"#001F3F",
           fontFamily: "Georgia",
+          width:"100vw",
           color: "white",
           display: "flex",
           flexDirection: "column",
