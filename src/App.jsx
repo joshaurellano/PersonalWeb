@@ -53,13 +53,19 @@ function App() {
     </Toast>
           <Navbar data-bs-theme="dark" fixed="top" collapseOnSelect expand="lg" style={{backgroundColor:"#001F3F"}}>
           <Container>
-          <div>
+          <div style={{display:"flex"}}>
           <span className="navbar-toggler-icon" 
-          style={{marginRight:"5px", cursor:"pointer"}}
+          style={{cursor:"pointer"}}
           onClick={handleShow}></span>
           </div>
-          <FcBusinessman style={{height:"30px", width:"30px", marginRight:"5px",marginLeft:"5px"}} />
-            <Navbar.Brand as={Link} to="/" style={{fontWeight:"bold",fontFamily:"Georgia,seriff", marginLeft:"5px"}}>My Personal Website</Navbar.Brand>
+          <FcBusinessman style={{
+            height:"30px", 
+            width:"30px"}} />
+            <Navbar.Brand as={Link} to="/" style={{display:"flex", 
+              alignItems:"center",
+              fontWeight:"bold",
+              fontFamily:"Georgia,seriff" 
+            }}>My Personal Website</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto" variant="pills">
@@ -133,10 +139,10 @@ function App() {
                 alignItems: "center",
                 padding: "2rem 0" 
             }}>
-              <Row className="mb-4 g-4" xs={1} sm={2} lg={3}>
-                <Col lg={4} md={6} sm={12}>
+              <Row className="mb-4 g-4" style={{justifyContent:"center"}} xs={1} sm={2} lg={3}>
+                <Col>
                 <Card style={{
-                  width: '18rem',
+                  width: '100%',
                   height: '15rem',
                   backgroundImage: `url(${ima1})`,
                   backgroundSize: "cover",
@@ -152,8 +158,8 @@ function App() {
                 </Card.Body>
               </Card>
                 </Col>
-                <Col lg={4} md={6} sm={12}>
-                <Card style={{ width: '18rem' ,
+                <Col>
+                <Card style={{ width: '100%' ,
                   height: '15rem',
                   backgroundImage: `url(${ima2})`,
                   backgroundSize: "cover",
@@ -169,8 +175,8 @@ function App() {
                 </Card.Body>
               </Card>
                 </Col>
-                <Col lg={4} md={6} sm={12}>
-                <Card style={{ width: '18rem' , 
+                <Col>
+                <Card style={{ width: '100%' , 
                   height: '15rem',
                   backgroundImage: `url(${ima3})`,
                   backgroundSize: "cover",
@@ -187,9 +193,9 @@ function App() {
               </Card>
                 </Col>
               </Row>
-              <Row className='justify-content-center' xs={1} sm={2} lg={3}>
-              <Col lg={6} md={6} sm={12} className='p-3'>
-              <Card style={{ width: '18rem' , 
+              <Row className="mb-4 g-4" style={{justifyContent:"center"}} xs={1} sm={2} lg={2}>
+              <Col className='p-3'>
+              <Card style={{ width: '100%' , 
                   height: '15rem',
                   backgroundImage: `url(${ima5})`,
                   backgroundSize: "cover",
@@ -205,8 +211,8 @@ function App() {
                 </Card.Body>
               </Card>
                 </Col>
-                <Col lg={6} md={6} sm={12} className='p-3'>
-                <Card style={{ width: '18rem' , 
+                <Col className='p-3'>
+                <Card style={{ width: '100%' , 
                   height: '15rem',
                   backgroundImage: `url(${ima4})`,
                   backgroundSize: "cover",

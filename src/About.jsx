@@ -32,13 +32,19 @@ function About() {
           <div>
           <Navbar data-bs-theme="dark" fixed="top" collapseOnSelect expand="lg" style={{backgroundColor:"#001F3F"}}>
           <Container>
-          <div>
+          <div style={{display:"flex"}}>
           <span className="navbar-toggler-icon" 
-          style={{marginRight:"5px", cursor:"pointer"}}
+          style={{cursor:"pointer"}}
           onClick={handleShow}></span>
           </div>
-          <FcBusinessman style={{height:"30px", width:"30px", marginRight:"5px",marginLeft:"5px"}} />
-            <Navbar.Brand as={Link} to="/" style={{fontWeight:"bold",fontFamily:"Georgia,seriff", marginLeft:"5px"}}>My Personal Website</Navbar.Brand>
+          <FcBusinessman style={{
+            height:"30px", 
+            width:"30px"}} />
+            <Navbar.Brand as={Link} to="/" style={{display:"flex", 
+              alignItems:"center",
+              fontWeight:"bold",
+              fontFamily:"Georgia,seriff" 
+            }}>My Personal Website</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto" variant="pills">
