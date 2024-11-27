@@ -7,6 +7,8 @@ import About from './About';
 import Education from './Education';
 import Hobbies from './Hobbies';
 import Photos from './Photos';
+import Missing from './Missing';
+
 
 
 const Path = () =>{
@@ -19,6 +21,8 @@ const Path = () =>{
         <Route path="/education" element={<Education />} />
         <Route path="/hobbies" element={<Hobbies />} />
         <Route path="/photos" element={<Photos />} />
+        <Route path="/projects" element={<Missing />} />
+
       </Routes>
       </Router>
     );

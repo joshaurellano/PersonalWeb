@@ -1,6 +1,9 @@
 import {React, useState } from 'react'
 import { FcBusinessman } from "react-icons/fc";
-import { FaFacebook,FaGithub,FaArrowRight  } from "react-icons/fa";
+import { MdDateRange } from "react-icons/md";
+import { ImAddressBook } from "react-icons/im";
+import { FaFacebook,FaGithub,FaArrowRight,FaUser,FaPhone  } from "react-icons/fa";
+import { LuUsers2 } from "react-icons/lu";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import './App.css';
 import {Link} from 'react-router-dom';
@@ -139,19 +142,19 @@ function About() {
           <Col lg={6} md={12} style={{ paddingTop: "40px" }}>
           <div style={{paddingTop:"40px"}}>
             <h1 style={{fontSize:"2rem",
-            }}>Name</h1>
+            }}><FaUser /> Name</h1>
             <p style={{fontSize:"1rem"}}>Joshua Anthony Sales - Aurellano <br /></p>
             <hr />
           </div>
           <div style={{paddingTop:"40px"}}>
             <h1 style={{fontSize:"2rem",
-            }}>Birthday</h1>
+            }}><MdDateRange /> Birthday</h1>
             <p style={{fontSize:"1rem"}}>June 1, 1999 (25 years old)</p>
             <hr />
           </div>
           <div style={{paddingTop:"40px"}}>
             <h1 style={{fontSize:"2rem",
-            }}>Address</h1>
+            }}><ImAddressBook /> Address</h1>
             <p style={{fontSize:"1rem"}}>077 Zone 1 Marupit Camaligan Camarines Sur</p>
             <hr />
           </div>
@@ -159,7 +162,7 @@ function About() {
           <Col lg={6} md={12} style={{ paddingTop: "40px" }}>
           <div style={{paddingTop:"40px"}}>
             <h1 style={{fontSize:"2rem",
-            }}>Contact Number</h1>
+            }}><FaPhone /> Contact Number</h1>
             <p style={{fontSize:"1rem"}}>09707907244-TnT <br />
             09656201624 - TM
             </p>
@@ -167,7 +170,7 @@ function About() {
           </div>
           <div style={{paddingTop:"40px"}}>
             <h1 style={{fontSize:"2rem",
-            }}>Parents</h1>
+            }}><LuUsers2 /> Parents</h1>
             <p style={{fontSize:"1rem"}}>Father : Henry B. Aurellano <br />
             Mother : Mary Jane S. Aurellano
             </p>
